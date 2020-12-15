@@ -31,4 +31,12 @@ btn.addEventListener('click', function () {
 		case 1:
 			result.innerText += ' год';
 	}
+	if (chunks.length > 2) {
+		let j = chunks[chunks.length - 2] + i;
+		if (j == 11 || 12 || 13 || 14) {
+			console.log(true);
+			result.innerText = `Your age is: ${age}`;
+			result.innerText += ' лет';
+		}
+	}
 });
